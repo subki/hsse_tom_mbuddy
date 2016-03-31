@@ -1,0 +1,562 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg_landscape">
+        <RelativeLayout
+            android:id="@+id/R_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" >
+                <!--  android:layout_below="@+id/toolbar" >
+                android:layout_above="@+id/fab" !-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"
+                    android:layout_below="@+id/scrollView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:id="@+id/b_gambar"
+                        android:src="@drawable/no"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+					<TextView
+                        android:id="@+id/judul"
+                        android:text="BIODATA PRIBADI :"
+                        android:textColor="#fff"
+                        android:textSize="16dip"
+                        android:textStyle="bold"
+                        android:background="@color/accent"
+                        android:layout_below="@+id/b_gambar"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tableLayout"
+                        android:layout_alignEnd="@+id/tableLayout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+								
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/judul"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tableLayout"
+                        android:background="@color/divider"
+                        android:shrinkColumns="2"
+                        android:stretchColumns="*">
+                        <TableRow
+                            android:id="@+id/row1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dip" >
+
+                            <TextView
+                                android:id="@+id/a1"
+                                android:text="NIK"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/b1"
+                                android:text=":"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                            <TextView
+                                android:id="@+id/b_nik"
+                                android:text="NIK"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_gravity="left" />
+
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/row2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dip" >
+
+                            <TextView
+                                android:id="@+id/a2"
+                                android:text="Nama"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/b2"
+                                android:text=":"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                            <TextView
+                                android:id="@+id/b_nama"
+                                android:text="Nama"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_gravity="left" />
+
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/row3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dip" >
+
+                            <TextView
+                                android:id="@+id/a3"
+                                android:text="TTL"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/b3"
+                                android:text=":"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                            <TextView
+                                android:id="@+id/b_ttl"
+                                android:text="TTL"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_gravity="left" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/row4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dip" >
+
+                            <TextView
+                                android:id="@+id/a4"
+                                android:text="Alamat (KTP)"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/b4"
+                                android:text=":"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                            <TextView
+                                android:id="@+id/b_alamat"
+                                android:text="Alamat(Ktp)"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_gravity="left" />
+
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/row5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dip" >
+
+                            <TextView
+                                android:id="@+id/a5"
+                                android:text="Alamat Saat Ini"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/b5"
+                                android:text=":"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                            <TextView
+                                android:id="@+id/b_alamat_now"
+                                android:text="Alamat Saat Ini"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_gravity="left" />
+
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/row6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dip" >
+
+                            <TextView
+                                android:id="@+id/a6"
+                                android:text="No Telepon / HP"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:id="@+id/b6"
+                                android:text=":"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                            <TextView
+                                android:id="@+id/b_phone"
+                                android:text="No Telepon / HP"
+                                android:textColor="#fff"
+                                android:textSize="14dip"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_gravity="left" />
+
+                    </TableRow>
+					<TableRow
+                        android:id="@+id/row7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:id="@+id/a7"
+                            android:text="Nama Kontak Darurat"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/b7"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                        <TextView
+                            android:id="@+id/b_nama_darurat"
+                            android:text="Nama Kontak Darurat"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_gravity="left" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:id="@+id/a8"
+                            android:text="Nomor Kontak Darurat"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/b8"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                        <TextView
+                            android:id="@+id/b_nomor_darurat"
+                            android:text="Nomor Kontak Darurat"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_gravity="left" />
+
+                    </TableRow>
+					<TableRow
+                        android:id="@+id/row9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:id="@+id/a9"
+                            android:text="Hubungan"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/b9"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                        <TextView
+                            android:id="@+id/b_hubungan"
+                            android:text="Hubungan"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_gravity="left" />
+
+                    </TableRow>
+				</TableLayout>
+				
+				<TextView
+                     android:id="@+id/kerja"
+                     android:text="PEKERJAAN :"
+                     android:textColor="#fff"
+                     android:textSize="16dip"
+                     android:textStyle="bold"
+                    android:background="@color/accent"
+                     android:layout_below="@+id/tableLayout"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/tableLayout"
+                    android:layout_alignEnd="@+id/tableLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+				<TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/kerja"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tableLayout2"
+                    android:background="@color/divider"
+                    android:shrinkColumns="2"
+                    android:stretchColumns="0,1">
+					<TableRow
+                        android:id="@+id/row10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:id="@+id/a10"
+                            android:text="Tgl Mulai Kerja"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/b10"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                        <TextView
+                            android:id="@+id/b_tmk"
+                            android:text="Tgl Mulai Kerja"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_gravity="left" />
+
+                    </TableRow>
+					<TableRow
+                        android:id="@+id/row11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:id="@+id/a11"
+                            android:text="Jabatan"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/b11"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                        <TextView
+                            android:id="@+id/b_jabatan"
+                            android:text="Jabatan"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_gravity="left" />
+
+                    </TableRow>
+					<TableRow
+                        android:id="@+id/row12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:id="@+id/a12"
+                            android:text="Site Area"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <TextView
+                            android:id="@+id/b12"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+                        <TextView
+                            android:id="@+id/b_location"
+                            android:text="Site Area"
+                            android:textColor="#fff"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_gravity="left" />
+
+                    </TableRow>
+                    </TableLayout>
+                    <TextView
+                        android:id="@+id/training"
+                        android:text="TRAINING BASIC:"
+                        android:textColor="#fff"
+                        android:textSize="14dip"
+                        android:textStyle="bold"
+                        android:background="@color/accent"
+                        android:layout_below="@+id/tableLayout2"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tableLayout2"
+                        android:layout_alignEnd="@+id/tableLayout2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/divider"
+                            android:shrinkColumns="1"
+                            android:stretchColumns="0,2,3,4"
+                            android:id="@+id/tableTrainingBasic"
+                            android:layout_below="@+id/training"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+                            <!-- disini isi dari tabel dinamis, buat tampilin training yang udah di jalanin !-->
+                        </TableLayout>
+                    <TextView
+                        android:id="@+id/trainingNonbasic"
+                        android:text="TRAINING Non BASIC:"
+                        android:textColor="#fff"
+                        android:textSize="14dip"
+                        android:textStyle="bold"
+                        android:background="@color/accent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tableTrainingBasic"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/tableTrainingBasic"
+                        android:layout_alignEnd="@+id/tableTrainingBasic" />
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/divider"
+                            android:shrinkColumns="1"
+                            android:stretchColumns="0,2,3,4"
+                            android:id="@+id/tableTrainingNonBasic"
+                            android:layout_below="@+id/trainingNonbasic"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+                            <!-- disini isi dari tabel dinamis, buat tampilin training yang udah di jalanin !-->
+                        </TableLayout>
+
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/view_toolbar">
+        </include>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_scan1"
+            app:fabSize="normal"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/view_nav_header"
+        app:itemTextColor="#fff"
+        app:itemIconTint="#B6B6B6"
+        app:menu="@menu/menu_nav_items" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="7dip" >
+
+    <TextView
+        android:id="@+id/txtids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/txtnama"
+        android:layout_alignEnd="@+id/txtnama"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtnama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtids"
+        android:textColor="#000"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/txtnomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnama"
+        android:textColor="#000"
+        android:text="nomor"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/txttelepon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="/"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/txtnomor"
+        android:layout_toRightOf="@+id/txtnomor"
+        android:layout_toEndOf="@+id/txtnomor" />
+
+    <TextView
+        android:id="@+id/txttelepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="telepon"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/txttelepon2"
+        android:layout_toRightOf="@+id/txttelepon2"
+        android:layout_toEndOf="@+id/txttelepon2" />
+
+</RelativeLayout>

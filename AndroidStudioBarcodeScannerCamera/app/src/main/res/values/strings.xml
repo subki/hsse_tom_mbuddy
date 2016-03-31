@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Studio Barcode Scanner Camera</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="web">Android Web Development: androidwebdevelopment.com</string>
+    <string name="about">Android Scanner Camera</string>
+</resources>

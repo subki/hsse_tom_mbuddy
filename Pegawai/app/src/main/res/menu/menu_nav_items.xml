@@ -1,0 +1,55 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pegawai">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_member"
+            android:title="Personal Information"/>
+        <item
+            android:id="@+id/nav_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/menu_lisence"
+            android:title="Capability and License to Work"/>
+        <item
+            android:id="@+id/nav_goal"
+            android:icon="@drawable/menu_goal"
+            android:title="Goal Zero"/>
+        <!--    <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_rumah"
+                android:title="Home"/> !-->
+        <item
+            android:id="@+id/nav_erp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/menu_erp"
+            android:title="Emergency Response Procedure"/>
+        <item
+            android:id="@+id/nav_ecn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/menu_ecn"
+            android:title="Emergency Contact Numbers"/>
+
+        <item
+            android:id="@+id/nav_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/menu_team"
+            android:title="Team Contact Numbers"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_exit"
+            android:title="Logout"/>
+    </group>
+
+</menu>

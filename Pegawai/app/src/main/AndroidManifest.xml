@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pegawai" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Utama"
+            android:label="@string/title_activity_utama"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Employee"
+            android:label="@string/title_activity_employee"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Team_number"
+            android:label="@string/title_activity_important_numbers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Goal_zero"
+            android:label="@string/title_activity_goal_zero"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ER_Procedure"
+            android:label="@string/title_activity_er__procedure"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Detail_ER"
+            android:label="@string/title_activity_detail__er"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EC_number"
+            android:label="@string/title_activity_ec_number"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".License"
+            android:label="@string/title_activity_license"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!--
+        <activity
+            android:name=".BasicFragment"
+            android:label="@string/title_activity_basic_fragment" >
+        </activity>
+        <activity
+            android:name=".LowFragment"
+            android:label="@string/title_activity_low_fragment" >
+        </activity>
+        <activity
+            android:name=".MiddleFragment"
+            android:label="@string/title_activity_middle_fragment" >
+        </activity>
+        <activity
+            android:name=".TopFragment"
+            android:label="@string/title_activity_top_fragment" >
+        </activity> !
+        -->
+        <activity
+            android:name=".big_risk"
+            android:label="@string/title_activity_big_risk" >
+        </activity>
+        <activity
+            android:name=".nilai_training"
+            android:label="@string/title_activity_nilai_training" >
+        </activity>
+    </application>
+
+</manifest>
